@@ -1,0 +1,22 @@
+{
+    "name": "sweikenb/RedisMQBundle",
+    "description": "Simple REDIS based message queue",
+	"keywords": ["redis", "mq", "message", "queue", "messagequeue"],
+	"type": "bundle",
+	"license": "MIT",
+	"authors": [
+        {
+            "name": "Simon Schröer",
+            "email": "code@sweikenb.com"
+        }
+    ],
+    "require": {
+        "symfony/symfony": ">=2.3,<3.0",
+        "predis/predis": "~0.8",
+        "snc/redis-bundle": "~1.1"
+    },
+    "autoload": {
+        "psr-0": { "Sweikenb\\Bundle\\RedisMQBundle": "" }
+    },
+    "target-dir": "Sweikenb/Bundle/RedisMQBundle"
+}
