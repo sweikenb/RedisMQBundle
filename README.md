@@ -1,7 +1,6 @@
 RedisMQBundle
 =============
-Simple REDIS based message queue
-License: MIT
+Simple REDIS based message queue.
 
 Installation
 ============
@@ -15,14 +14,25 @@ Add the following dependency to your `composer.json` file:
 
 Active the bundle in your `app/AppKernel.php` file:
 ```php
+  $bundles = array(
+    // ...
     new Sweikenb\Bundle\RedisMQBundle\SweikenbRedisMQBundle(),
+  );
 ```
 
 Configuration
 =============
-
+As described in the example section, this bundle comes with an default service which uses the default_client connection of the snc redis bundle. If you wish to modify this, you simply can add you own service with an custom client:
+```xml
+  <services>
+    <service id="acme.custom.mq.client" class="%sweikenb_redis_mq.RedisMQService.class%">
+      <argument type="service" id="my.custom.snc.redisClient.here"/>
+    </service>
+  </services>
+```
 
 Example usage
+=============
 You will finde two example commands in this bundle:
 
 * sweikenb:redismq:example:write
