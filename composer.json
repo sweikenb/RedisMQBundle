@@ -1,5 +1,5 @@
 {
-    "name": "sweikenb/RedisMQBundle",
+    "name": "sweikenb/redis-mq-bundle",
     "description": "Simple REDIS based message queue",
 	"keywords": ["redis", "mq", "message", "queue", "messagequeue"],
 	"type": "bundle",
