@@ -25,7 +25,7 @@ class ExampleReadCommand extends ContainerAwareCommand
         $mq = $this->getContainer()->get('sweikenb.redis_mq.example');
         while (true) {
             $msg = $mq->readMessage('example:queue');
-            print_r($msg);
+            $output->writeln(json_encode($msg));
             usleep(500);
         }
     }
