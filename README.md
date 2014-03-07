@@ -1,6 +1,9 @@
 RedisMQBundle
 =============
 Simple REDIS based message queue.
+***
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/10f1377f-4eeb-4a61-a84e-4dfe23e16885/mini.png)](https://insight.sensiolabs.com/projects/10f1377f-4eeb-4a61-a84e-4dfe23e16885)
+
 
 Installation
 ============
